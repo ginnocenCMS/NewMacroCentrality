@@ -122,8 +122,8 @@ void centralityCalibration(TString inHiForestFileName, TString outFileName, bool
   fCenOffline[0] = new TH1D("fCenOffline",";Offline Centrality",nBins,0,maxCen);
 
   int countCalib = 0;
-
-  Long64_t entries = f1Tree->GetEntries();
+  //Long64_t entries = f1Tree->GetEntries();
+  Long64_t entries=10000;
   for(Long64_t j = 0; j < entries; ++j)
   {
     if(j % 10000 == 0)
@@ -159,7 +159,7 @@ void centralityCalibration(TString inHiForestFileName, TString outFileName, bool
       countCalib++;
   }
   //************** second loop ************** 
-  
+   
   printf("Matching entries: %d\n",countCalib);
 
   TF1 *fprofileofflineCentralityVsl1Etsum_Calibration = new TF1("fprofileofflineCentralityVsl1Etsum_Calibration","pol9",0,2500);
