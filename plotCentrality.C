@@ -229,10 +229,10 @@ void plotCentrality(TString l1_input, bool isdata=false)
 	cout<<"***************************"<<endl;
 	cout<<"LUT for centrality ranges"<<endl;
 	cout<<"Centrality 0-5% = E_{T} sum > "<<Etsum[0]<<endl;
-	cout<<"Centrality 5-10% ="<<Etsum[0]<<"<E_{T} sum <"<<Etsum[1]<<endl;
-	cout<<"Centrality 10-30% ="<<Etsum[1]<<"<E_{T} sum <"<<Etsum[2]<<endl;
-	cout<<"Centrality 30-50% ="<<Etsum[2]<<"<E_{T} sum <"<<Etsum[3]<<endl;
-	cout<<"Centrality 50-90% ="<<Etsum[3]<<"<E_{T} sum <"<<Etsum[0]<<endl;
+	cout<<"Centrality 5-10% ="<<Etsum[1]<<"<E_{T} sum <"<<Etsum[0]<<endl;
+	cout<<"Centrality 10-30% ="<<Etsum[2]<<"<E_{T} sum <"<<Etsum[1]<<endl;
+	cout<<"Centrality 30-50% ="<<Etsum[3]<<"<E_{T} sum <"<<Etsum[2]<<endl;
+	cout<<"Centrality 50-90% ="<<Etsum[4]<<"<E_{T} sum <"<<Etsum[3]<<endl;
 	cout<<"Centrality "<<(int)(limit[4]/2)<<"-100% =  E_{T} sum <"<<Etsum[4]<<endl;
 
 
